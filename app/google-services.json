@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "64678697960",
+    "project_id": "molachat-92ff6",
+    "storage_bucket": "molachat-92ff6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64678697960:android:4b45fc9021f66acbca225d",
+        "android_client_info": {
+          "package_name": "com.example.messengerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ16GkpmtOJAHSSWMI9USUTCvvc8XVW5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_15sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.view.authentication.signin.SignInFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_30ssp"
+            android:textStyle="bold"
+            app:fontFamily="@font/halant_medium" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_continue"
+            android:textColor="@color/sonic_silver"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:fontFamily="@font/halant" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:startIconDrawable="@drawable/ic_email_outlined"
+            app:endIconMode="clear_text">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                style="@style/Username"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:startIconDrawable="@drawable/ic_key_outline"
+            app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                style="@style/Password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:text="@string/sign_in"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_20sdp"
+            style="@style/styleButton"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/have_not_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/sonic_silver"
+            android:fontFamily="@font/halant"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/sonic_silver"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/halant"
+            android:textStyle="bold"
+            android:text="@string/sign_up"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/logo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:shapeAppearanceOverlay="@style/circular"-->
+<!--            android:src="@mipmap/ic_logo2"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/logo"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_marginTop="@dimen/_80sdp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/welcome"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_30ssp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:fontFamily="@font/halant_medium" />-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/sign_continue"-->
+<!--                android:textColor="@color/sonic_silver"-->
+<!--                android:textSize="@dimen/_14ssp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:fontFamily="@font/halant" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                app:startIconDrawable="@drawable/ic_email_outlined"-->
+<!--                app:endIconMode="clear_text">-->
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/input_username"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:imeOptions="actionNext"-->
+<!--                    style="@style/Username"/>-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                app:startIconDrawable="@drawable/ic_key_outline"-->
+<!--                app:endIconMode="password_toggle">-->
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/input_password"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:imeOptions="actionDone"-->
+<!--                    style="@style/Password"/>-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--            <Button-->
+<!--                android:id="@+id/login_button"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_50sdp"-->
+<!--                android:layout_marginTop="@dimen/_20sdp"-->
+<!--                style="@style/LoginButton"/>-->
+<!--        </LinearLayout>-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--            &lt;!&ndash;        <com.google.android.material.progressindicator.CircularProgressIndicator&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:visibility="gone"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:indeterminate="true"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/progressIndicator"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"/>&ndash;&gt;-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:orientation="vertical">-->
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_40sdp"-->
+<!--                android:text="@string/welcome_back"-->
+<!--                android:textSize="@dimen/_18ssp"-->
+<!--                android:textStyle="bold"/>-->
+
+<!--                <com.google.android.material.textview.MaterialTextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_4sdp"-->
+<!--                    android:text="@string/login_to_continue"-->
+<!--                    android:textSize="@dimen/_12ssp"-->
+<!--                    android:textStyle="bold"/>-->
+
+<!--                &lt;!&ndash; Setup Input Text for username and password &ndash;&gt;-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_40sdp"-->
+<!--                    app:endIconMode="clear_text">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/input_username"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:imeOptions="actionNext"-->
+<!--                        style="@style/Username"/>-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_16sdp"-->
+<!--                    app:endIconMode="password_toggle">-->
+<!--                    <com.google.android.material.textfield.TextInputEditText-->
+<!--                        android:id="@+id/input_password"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:imeOptions="actionDone"-->
+<!--                        style="@style/Password"/>-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--                &lt;!&ndash; Setup Button Login, Create New Account &ndash;&gt;-->
+<!--                <Button-->
+<!--                    android:id="@+id/login_button"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_50sdp"-->
+<!--                    android:layout_marginTop="@dimen/_20sdp"-->
+<!--                    style="@style/LoginButton"/>-->
+
+<!--                <Button-->
+<!--                    android:id="@+id/createAccount_button"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="@dimen/_30sdp"-->
+<!--                    style="@style/CreateAccountButton"/>-->
+
+<!--            </LinearLayout>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

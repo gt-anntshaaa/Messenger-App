@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MessengerApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/dark_blue_gray</item>
+        <item name="android:statusBarColor">@color/dark_blue_gray</item>
+        <item name="toolbarStyle">@style/toolbarStyle</item>
+
+    </style>
+
+    <style name="Theme.MessengerApp" parent="Base.Theme.MessengerApp"/>
+
+    <!-- Circular image -->
+    <style name="circular">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="rounded">
+        <item name="cornerRadius">@dimen/_155sdp</item>
+    </style>
+    
+    <!-- Toolbar style -->
+    <style name="toolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/dark_blue_gray</item>
+        <item name="fontFamily">@font/halant</item>
+        <item name="android:fontFamily">@font/halant</item>
+        <item name="android:popupTheme">@color/white</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <!-- Style button login & create new account button -->
+    <style name="styleButton" parent="Widget.Material3.Button">
+        <item name="android:fontFamily">@font/halant</item>
+        <item name="android:backgroundTint">@color/dark_blue_gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CreateAccountButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:text">@string/create_new_account</item>
+        <item name="android:textColor">@color/dark_blue_gray</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style Email or Username for Text Input Layout -->
+    <style name="FullName">
+        <item name="android:hint">@string/name</item>
+        <item name="android:textColor">@color/raisin_black</item>
+        <item name="android:textColorHint">@color/sonic_silver</item>
+        <item name="fontFamily">@font/halant</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:paddingStart">@dimen/_16sdp</item>
+        <item name="android:paddingEnd">@dimen/_16sdp</item>
+    </style>
+    <style name="Username">
+        <item name="android:hint">@string/email</item>
+        <item name="android:textColor">@color/raisin_black</item>
+        <item name="android:textColorHint">@color/sonic_silver</item>
+        <item name="fontFamily">@font/halant</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:paddingStart">@dimen/_16sdp</item>
+        <item name="android:paddingEnd">@dimen/_16sdp</item>
+    </style>
+    <style name="Password">
+        <item name="android:hint">@string/password</item>
+        <item name="android:textColor">@color/raisin_black</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="fontFamily">@font/halant</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:paddingStart">@dimen/_16sdp</item>
+        <item name="android:paddingEnd">@dimen/_16sdp</item>
+    </style>
+
+
+
+</resources>
